@@ -1,1 +1,3 @@
 /.tolinoclientrc
+__pycache__
+*.bak
