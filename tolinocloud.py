@@ -137,7 +137,7 @@ class TolinoCloud:
                     'login' : ''
                     }
              },
-            'login_cookie'     : 'JSESSIONID',
+            'login_cookie'     : 'OAUTH-JSESSIONID',
             'logout_url'       : 'https://www.thalia.de/shop/home/login/logout/',
             'reader_url'       : 'https://webreader.mytolino.com/library/index.html#/mybooks/titles',
             'register_url'     : 'https://bosh.pageplace.de/bosh/rest/v2/registerhw',
@@ -155,20 +155,20 @@ class TolinoCloud:
             'signup_url'       : 'https://www.thalia.at/shop/home/kunde/neu/',
             'profile_url'      : 'https://www.thalia.at/shop/home/kunde/',
             'token_url'        : 'https://www.thalia.at/de.buch.appservices/api/4004/oauth2/token',
-            'login_form_url'   : 'https://auth.buch.de/de.thalia.ecp.authservice.application/oauth2/login',
+            'login_form_url'   : 'https://www.thalia.at/de.thalia.ecp.authservice.application/oauth2/login',
             'x_buchde.skin_id' : '17',
-            'x_buchde.mandant_id' :'4',
-            'auth_url'         : 'https://auth.buch.de/de.thalia.ecp.authservice.application/oauth2/authorize',
-            'login_url'        : 'https://auth.buch.de/de.thalia.ecp.authservice.application/login.do',
+            'x_buchde.mandant_id' : '4',
+            'auth_url'         : 'https://www.thalia.at/de.thalia.ecp.authservice.application/oauth2/authorize',
+            'login_url'        : 'https://www.thalia.at/de.thalia.ecp.authservice.application/login.do',
             # 'revoke_url'       : 'https://www.thalia.de/de.buch.appservices/api/2004/oauth2/revoke',
             'login_form'       : {
                 'username' : 'j_username',
                 'password' : 'j_password',
                 'extra'    : {
                     'login' : ''
-                    }
+                }
              },
-            'login_cookie'     : 'JSESSIONID',
+            'login_cookie'     : 'OAUTH-JSESSIONID',
             'logout_url'       : 'https://www.thalia.at/shop/home/show/',
             'reader_url'       : 'https://webreader.mytolino.com/library/index.html#/mybooks/titles',
             'register_url'     : 'https://bosh.pageplace.de/bosh/rest/v2/registerhw',
@@ -226,6 +226,35 @@ class TolinoCloud:
             'logout_url'       : 'https://www.hugendubel.de/de/account/logout',
             'reader_url'       : 'https://webreader.hugendubel.de/library/index.html',
             'register_url'     : 'https://bosh.pageplace.de/bosh/rest/registerhw',
+            'devices_url'      : 'https://bosh.pageplace.de/bosh/rest/handshake/devices/list',
+            'unregister_url'   : 'https://bosh.pageplace.de/bosh/rest/handshake/devices/delete',
+            'upload_url'       : 'https://bosh.pageplace.de/bosh/rest/upload',
+            'delete_url'       : 'https://bosh.pageplace.de/bosh/rest/deletecontent',
+            'inventory_url'    : 'https://bosh.pageplace.de/bosh/rest/inventory/delta',
+            'downloadinfo_url' : 'https://bosh.pageplace.de/bosh/rest//cloud/downloadinfo/{}/{}/type/external-download'
+        },
+        30: {
+            # buecher.de
+            'client_id'        : 'dte_ereader_app_01',
+            'scope'            : 'ebook_library',
+            'signup_url'       : 'https://www.buecher.de/go/my_dry/my_register_aos/',
+            'profile_url'      : 'https://www.buecher.de/go/my_dry/my_login/receiver_object/my_login/',
+            'token_url'        : 'https://www.buecher.de/oauth2/token',
+            'revoke_url'       : 'https://www.buecher.de/oauth2/revoke',
+            'auth_url'         : 'https://www.buecher.de/oauth2/authorize',
+            'login_url'        : 'https://www.buecher.de/go/my_dry/my_login/',
+            'login_form'       : {
+                'username' : 'form[login]',
+                'password' : 'form[password]',
+                'extra'    : {
+                    'form_send' : '1'
+                }
+            },
+            'x_buecherde.skin_id' : 'de_dte_tolino',
+            'login_cookie'     : 'session',
+            'logout_url'       : 'https://www.buecher.de/go/my_dry/my_logout/',
+            'reader_url'       : 'https://webreader.mytolino.com/library/',
+            'register_url'     : 'https://bosh.pageplace.de/bosh/rest/v2/registerhw',
             'devices_url'      : 'https://bosh.pageplace.de/bosh/rest/handshake/devices/list',
             'unregister_url'   : 'https://bosh.pageplace.de/bosh/rest/handshake/devices/delete',
             'upload_url'       : 'https://bosh.pageplace.de/bosh/rest/upload',
